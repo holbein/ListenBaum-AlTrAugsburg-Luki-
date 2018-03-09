@@ -33,12 +33,17 @@ class KNOTEN extends LISTENELEM {
         return this;
     }
         
-    LISTENELEM LetztenKnotenLöschen(LISTENELEM le){
-       
+    LISTENELEM LetztenKnotenLöschen(){
+       n = nächster.LetztenKnotenLöschen();
+       //Abschluss gibt null zurück
+       if(n==null){
+           return nächster;
+       }
+       return n; 
     }
     
     LISTENELEM LetztenKnotenGeben(LISTENELEM le){
- 
+        return nächster.LetztenKnotenGeben(this);
     }
     
 }
