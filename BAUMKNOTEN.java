@@ -1,4 +1,4 @@
-//Knoten Klasse
+//Knoten Klasse des Binärbaumes
 class BAUMKNOTEN extends BAUMELEM {
     private BAUMELEM links;
     private BAUMELEM rechts;
