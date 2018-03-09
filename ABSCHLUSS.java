@@ -26,12 +26,13 @@ class ABSCHLUSS extends LISTENELEM {
         return new KNOTEN(this, i);
     }
         
-    LISTENELEM LetztenKnotenLöschen(LISTENELEM le){
-        
+    LISTENELEM LetztenKnotenLöschen(){
+        //Gibt null zurück um zu zeigen, dass er der letzte ist
+        return null;
     }
         
     LISTENELEM LetztenKnotenGeben(LISTENELEM le){
-       
+       return le;
     }
     
 }
