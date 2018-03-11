@@ -1,4 +1,3 @@
-//Baum Klasse, welche den Binärbaum verwaltet
 class BAUM {
     private BAUMELEM wurzel;
 
@@ -7,11 +6,14 @@ class BAUM {
     }
 
     BAUM(LISTE l){
-        
+        wurzel = new BAUMKNOTEN(l);
     }
     
     int AnzahlKnoten(){
         return wurzel.AnzahlKnotenBerechnen();
     }
     
+    void InOrderAusgeben(){
+        wurzel.InOrderAusgeben();
+    }
 }
