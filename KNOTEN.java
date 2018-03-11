@@ -34,12 +34,14 @@ class KNOTEN extends LISTENELEM {
     }
         
     LISTENELEM LetztenKnotenLöschen(){
-       n = nächster.LetztenKnotenLöschen();
-       //Abschluss gibt null zurück
-       if(n==null){
+       
+       if(nächster.LetztenKnotenLöschen()==null){
            return nächster;
        }
-       return n; 
+       else{
+           nächster = nächster.LetztenKnotenLöschen();
+           return this;
+       }
     }
     
     LISTENELEM LetztenKnotenGeben(LISTENELEM le){
@@ -47,3 +49,4 @@ class KNOTEN extends LISTENELEM {
     }
     
 }
+
