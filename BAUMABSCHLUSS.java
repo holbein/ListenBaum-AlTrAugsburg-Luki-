@@ -1,4 +1,3 @@
-//Abschlussklasse vom Binärbaum
 class BAUMABSCHLUSS extends BAUMELEM {
 
     BAUMELEM LinksGeben(){
@@ -15,5 +14,9 @@ class BAUMABSCHLUSS extends BAUMELEM {
     
     int AnzahlKnotenBerechnen(){
         return 0;
+    }
+    
+    void InOrderAusgeben(){
+        System.out.println("[\n\n]");
     }
 }
